@@ -1,0 +1,434 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+
+header ul {
+    text-decoration: none;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+
+header ul li {
+    margin-right: 30px;
+}
+
+
+header ul li a {
+    font-size: 23px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+header::after {
+    content: "";
+    background-color: black;
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.button-nav {
+    margin-left: 25px;
+    width: 200px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #B7EAAF;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+
+header {
+    background-image: url(./img/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    margin-bottom: 50px; 
+}
+
+
+.img-nav {
+    width: 55px;
+    height: 55px;
+    margin-right: 20px;
+}
+
+
+.header-h {
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    z-index: 1000;
+    white-space: pre-line; 
+    text-align: center; /
+}
+
+
+.last-word {
+    color: #B7EAAF;
+}
+
+
+.header-h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+.header-p{
+    color: white;
+    font-size: 25px;
+    white-space: pre-line; 
+    z-index: 10000;
+}
+.f{
+    visibility: hidden;
+}
+.logos{
+    position: relative;
+    z-index: 10000;
+    margin-top: 250px;
+}
+.image-logos{
+   display: flex;
+   gap: 20px;
+}
+.button-c{
+    background-color: #375739;
+    color: white;
+    width: 280px;
+    height: 62px;
+    padding: 0 10px;
+    font-size: 25px;
+    border-radius: 45px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Тінь для зображень */
+}
+.cataloge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    flex-direction: column;
+}
+.cataloge-h2{
+    margin-top: 30px;
+    color: #B7EAAF;
+}
+.cataloge-p{
+    white-space: pre-line; 
+    font-size: 22px;
+}
+.cataloge-image{
+    display: flex;
+    gap: 20px;
+}
+.img-c{
+    width: 300px;
+    height: 225px;
+}
+.cataloge-h1{
+    margin-top: 100px;
+    font-size: 60px;
+    color: #355342;
+}
+.cataloge-h3{
+    color: white;
+    position: absolute;
+    z-index: 120130;
+    top: 5px;
+    left: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.Foliage{
+    position: relative;
+}
+.Foliage::after{
+        content: "";
+        background-color: black;
+        opacity: .2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 40px;
+}
+.foliage-p{
+    color: white;
+    position: absolute;
+    z-index: 232423;
+    left: 40px;
+    top: 140px;
+    font-size: 25px;
+    font-weight: 400;
+}
+.img-f{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    z-index: 12121;
+    width: 40px;
+    height: 40px;
+}
+.Pucculent {
+    position: relative;
+}
+.Pucculent::after{
+    content: "";
+        background-color: black;
+        opacity: .2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 40px;
+}
+.flower{
+    position: relative;
+}
+.flower::after{
+    content: "";
+        background-color: black;
+        opacity: .2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 40px;
+}
+.fruits{
+    position: relative;
+}
+.fruits::after{
+    content: "";
+        background-color: black;
+        opacity: .2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 40px;
+}
+.button-c:hover{
+    background-color:#B7EAAF ;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.button-nav:hover{
+    cursor: pointer;
+}
+.header-h, .header-p {
+    position: relative;
+    z-index: 2; /* Текст завжди поверх меню */
+}
+
+.dropdown {
+    position: relative; /* Встановлюємо відносне позиціонування для батьківського елемента */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 0; /* Прибираємо додаткові пробіли */
+    width: 100%; /* Фон на всю ширину */
+    top: 100%; /* Розміщуємо меню прямо під текстом "Shop" */
+    left: 0; /* Починаємо меню з лівого краю елемента */
+    border-radius: 10px; /* Округлі краї для меню */
+    z-index: 1;
+}
+
+.dropdown-content li a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    width: 100%; /* Розтягнемо лінки на всю ширину */
+    font-weight: 400px;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover a {
+    background-color: #213F36;
+}
+
+.dropdown-content li a:hover {
+    background-color: #B7EAAF;
+}
+.logos-1{
+    display: flex;
+    gap: 20px;
+}
+.logos-2{
+    display: flex;
+    gap: 20px;
+}
+.cataloge-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu-button{
+    visibility: hidden;
+}
+.header-service{
+    background-image: url(./img/Background-service.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    padding-top: 20px;
+}
+.img-bottom{
+    position: absolute;
+    z-index: 1212123;
+    bottom: 0;
+    width: 100%;
+}
+.image-contain-service{
+    position: absolute;
+    bottom: 170px;
+    z-index: 10301311413;
+    left: 455px;
+
+}
+.image-contain-service::after{
+    content: "";
+        background-color: #213F36;
+        opacity: .3;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 18px;
+
+}
+.service-h1{
+    position: absolute;
+    top: 300px;
+    z-index: 10301311413;
+    left: 505px;
+    color: white;
+    font-size: 60px;
+    white-space: pre-line; 
+}
+@media (max-width: 758px) {
+    .header-h1 {
+        font-size: 40px !important;
+    }
+    .header-p {
+        font-size: 20px !important;
+    }
+    .image-logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute; /* Забираємо position: absolute, щоб уникнути зміщення */
+        bottom: auto;
+        bottom: 20px;
+        right: 1px;
+        left: 10px;
+        scale: 1.2;
+    }
+    
+    .header-nav {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+    .cataloge-image{
+        flex-direction: column;
+        position: static;
+    }
+    .cataloge-text {
+        margin-top: 50px; /* Збільште відступ зверху, щоб уникнути перекриття */
+        z-index: 10; /* Підвищіть пріоритет відображення цього блоку */
+    }
+    .cataloge {
+        height: auto; /* Налаштування на автоматичну висоту */
+        padding: 50px 20px;} /* Встановіть внутрішні відступи *    
+    .img-nav, .button-nav {
+        display: none;
+    }
+
+    /* Навігація як дропдаун */
+    .header-nav {
+        display: none; /* Приховуємо спочатку */
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #213F36;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 30%;
+        z-index: 100;
+    }
+
+    /* Кнопка меню для відкриття дропдауну */
+    .menu-button {
+        display: block;
+        position: relative;
+        z-index: 1000;
+        font-size: 30px;
+        margin-left: auto;
+        margin-right: 20px;
+        visibility: visible;}
+
+    /* Відображаємо меню, коли воно активне */
+    .header-nav.active {
+        display: flex;
+    }
+    .img-nav{
+        display: none;
+    }
+    .button-nav{
+        display: none;
+    }
+}
+
