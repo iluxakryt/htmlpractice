@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practice 1</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <div class="header-nav">
+            <a href="./index.html">
+                <img class="img-nav" src="./img/Logo.png" alt="">
+            </a>
+            <ul>
+                <li><a href="./service.html">Service</a></li>
+                <li><a href="">Blog</a></li>
+                <li class="dropdown">
+                    <a href="#">Shop</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#foliage">Foliage</a></li>
+                        <li><a href="#succulent">Succulent</a></li>
+                        <li><a href="#flowers">Flowers</a></li>
+                        <li><a href="#fruits">Fruits</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Location</a></li>
+            </ul>                
+            <button class="button-nav">Check Out(0)</button>
+        </div>
+        <button class="menu-button">☰</button> <!-- Додана кнопка меню -->
+        <div class="header-h1">
+            <h1 class="header-h">Lets find 
+                your love 
+                <span class="last-word">Plants</span></h1>
+        </div>
+        <p class="header-p"> Add some color to your home, give it a litte attention, 
+        <span class="f">dadafadfa</span> the plants will accompany you quietly
+        </p>
+        <div class="logos">
+            <div class="image-logos">
+                <div class="logos-1">
+                    <img src="./img/001-plant 1.png" alt="">
+                    <img src="./img/001-plant 2.png" alt="">
+                </div>
+                <div class="logos-2">
+                    <img src="./img/001-plant 3.png" alt="">
+                    <img src="./img/001-plant 4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="cataloge">
+        <div class="cataloge-text">
+            <button class="button-c">Try for Service</button>
+            <h2 class="cataloge-h2">GET A BEAUTIFUL HOME</h2>
+            <p class="cataloge-p"> If you don't know what plants you can add to the space
+                <span class="f">dada</span>We can provide you with selected plants
+                <span class="f">daa</span> <span class="f">dadafadfa</span>And configure your space </p>
+        </div>
+        <h1 class="cataloge-h1">4 Types of plant</h1>
+        <div class="cataloge-image">
+            <div class="Foliage">
+                <img class="img-c" src="./img/Foliage.png" alt="">
+                <h3 class="cataloge-h3">Foliage</h3>
+                <p class="foliage-p">21 plants</p>
+                <img class="img-f" src="./img/001-plant 1.png" alt="">
+            </div>
+            <div class="Pucculent">
+                <img class="img-c" src="./img/Pucculent.png" alt="">
+                <h3 class="cataloge-h3">Pucculent</h3>
+                <p class="foliage-p">4 plants</p>
+                <img class="img-f" src="./img/001-plant 2.png" alt="">
+            </div>
+            <div class="flower">
+                <img class="img-c" src="./img/flower.png" alt="">
+                <h3 class="cataloge-h3">Flower</h3>
+                <p class="foliage-p">8 plants</p>
+                <img class="img-f" src="./img/001-plant 3.png" alt="">
+            </div>
+            <div class="fruits">
+                <img class="img-c" src="./img/fruits.png" alt="">
+                <h3 class="cataloge-h3">Fruits</h3>
+                <p class="foliage-p">10 plants</p>
+                <img class="img-f" src="./img/001-plant 4.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript для відкриття/закриття меню
+        document.querySelector('.menu-button').addEventListener('click', function() {
+            const nav = document.querySelector('.header-nav');
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
+
